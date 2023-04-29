@@ -1,15 +1,19 @@
 package com.funciones;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int precioInicial = 150000;
-        int precioTotal = ponerIva(precioInicial);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite el valor inicial");
+        int precioInicial = scanner.nextInt();
+        double precioTotal = ponerIva(precioInicial);
         System.out.println("El precio de producto sin iva es: " + precioInicial);
         System.out.println("El precio del producto con iva es: "+precioTotal);
     }
-    static int ponerIva(int precioInicial) {
-        int iva = precioInicial*11/100;
-        int precioFinal = precioInicial + iva;
+    static double ponerIva(int precioInicial) {
+        double iva = precioInicial*11/100;
+        double precioFinal = precioInicial + iva;
         return precioFinal;
     }
 }
