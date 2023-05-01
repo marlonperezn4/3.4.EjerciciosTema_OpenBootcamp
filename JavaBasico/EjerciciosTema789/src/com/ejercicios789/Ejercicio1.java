@@ -3,7 +3,7 @@ package com.ejercicios789;
 public class Ejercicio1 {
         public static void main(String[] args){
             System.out.println("###################################");
-            System.out.println("##### Vector Unidimensional #######");
+            System.out.println("###### Array Unidimensional #######");
             System.out.println("###################################");
             System.out.println("");
 
