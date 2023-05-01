@@ -26,7 +26,7 @@ public class Ejercicio5 {
         //LinkedList
         LinkedList<String> familialinkedlist = new LinkedList<String>(familia);
 
-        //Mostrarlos 
+        //Mostrarlos
         System.out.println("ArrayList");
         for (int i = 0; i < familia.size(); i++){
 
