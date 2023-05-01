@@ -1,9 +1,12 @@
+package com.ejercicios789;
+
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-public class Main {
+public class Ejercicio0 {
     public static void main(String[] args) {
+
         System.out.println("###################################");
         System.out.println("####### Cadena al Reves ###########");
         System.out.println("###################################");
@@ -22,5 +25,6 @@ public class Main {
             textoReves += texto.charAt(longitudTexto - i);
         }
         System.out.println(textoReves);
+
     }
 }
