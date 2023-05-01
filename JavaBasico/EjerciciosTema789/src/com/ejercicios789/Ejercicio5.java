@@ -1,6 +1,7 @@
 package com.ejercicios789;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Ejercicio5 {
     public static void main(String[] args) {
@@ -16,22 +17,25 @@ public class Ejercicio5 {
         familia.add("Maria");
         familia.add("Ana");
 
-        //LinkedList
-        String familialinkedlist[] = new String[familia.size()];
+        //Array normal (apuntes propios)
+        String familiaArray[] = new String[familia.size()];
         for (int i = 0; i < familia.size(); i++){
-            familialinkedlist[i] = familia.get(i);
+            familiaArray[i] = familia.get(i);
         }
 
-        //Mostrarlos
+        //LinkedList
+        LinkedList<String> familialinkedlist = new LinkedList<String>(familia);
+
+        //Mostrarlos 
         System.out.println("ArrayList");
         for (int i = 0; i < familia.size(); i++){
 
             System.out.println(familia.get(i));
         }
         System.out.println("LinkedList");
-        for (int i = 0; i < familialinkedlist.length; i++){
+        for (int i = 0; i < familialinkedlist.size(); i++){
 
-            System.out.println(familialinkedlist[i]);
+            System.out.println(familialinkedlist.get(i));
         }
     }
 }
